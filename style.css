@@ -68,7 +68,7 @@ header{
 .show-menu-btn, .hide-menu-btn{
     transition: 0.4s;
     cursor: pointer;
-    display: flex;
+    display: flex;  /* show hamberger */
     font-size: 22px;
     padding-left: 1.6rem;
 }
@@ -100,7 +100,7 @@ header{
         height: 100vh;
         background: rgb(4,180,212);
         color: #fff;
-        top: 0%;
+        top: 100%; /* changes in hamberger & its position*/
         left: 0;
         padding: 50px 0px;
         transition: 1s;
@@ -291,4 +291,51 @@ hr {
     margin-inline-end: 2rem;
 }
 
-
+@media screen and (max-width:767px){
+    .topbar{
+        width: 98%;
+    }
+    .grid-container{
+        display: -ms-grid;
+        display: grid;
+        grid-gap: 2%;
+        margin-left: -45px;
+        grid-template-columns: 65% 30%;
+        grid-template-rows: 65% 10%;
+    }
+    .grid-container div{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .buttom_grid2,
+    .buttom_grid3{
+        margin-top: 1px;
+    }
+    .buttom_grid1 p,
+    .buttom_grid2 p,
+    .buttom_grid3 p{
+        font-size: 10px;
+    }
+    .right_grid1{
+        height: 610%; /*  right grid 2 height*/
+    }
+    .see_more a{
+        margin-top: 20%;
+        margin-right: 3%;
+    }
+    .see_more hr{
+        margin-top: 25%;
+    }
+    .footer{
+        /* margin-left: 0.1rem; */
+        margin: 2px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .footer_logo{
+        margin-right: 0%;
+    }
+    .footer_logo img{
+        margin-inline-end: 1rem;
+    }
+}
