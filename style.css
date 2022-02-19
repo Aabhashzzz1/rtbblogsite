@@ -68,7 +68,7 @@ header{
 .show-menu-btn, .hide-menu-btn{
     transition: 0.4s;
     cursor: pointer;
-    display: none;  /* show hamberger */
+    display:none;  /* show hamberger */
     font-size: 22px;
     padding-left: 1.6rem;
 }
@@ -317,20 +317,20 @@ hr {
         font-size: 10px;
     }
     .right_grid1{
-        height: 610%; /*  right grid 2 height*/
+        height: 460%; /*  right grid 2 height*/
     }
     .see_more a{
-        margin-top: 20%;
+        margin-top: 38%;
         margin-right: 3%;
     }
     .see_more hr{
-        margin-top: 25%;
+        margin-top: 44%;
     }
     .footer{
         /* margin-left: 0.1rem; */
         margin: 2px;
         padding: 10px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .footer_logo{
         margin-right: 0%;
