@@ -291,8 +291,7 @@ hr {
     margin-inline-end: 2rem;
 }
 
-/* @media screen and (min-width:401px) and (max-width:960px){ */
-@media screen and (max-width:767px) {
+@media screen and (min-width:401px) and (max-width:960px){
     .topbar{
         width: 98.8%;
     }
@@ -354,7 +353,7 @@ hr {
     }
 }
 
-/* @media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     .search input{
         margin-right: 3%;
     }
@@ -427,4 +426,4 @@ hr {
     .footer_logo img{
         margin-inline-end: 0.5rem;
     }
-} */
+}
