@@ -89,7 +89,7 @@ header{
     visibility:hidden;
     z-index: -1111;
 }
-
+/* @media screen and (min-width:401px) and (max-width:960px){ */
 @media screen and (max-width:767px) {
     .show-menu-btn, .hide-menu-btn{
         display: flex;
@@ -291,21 +291,37 @@ hr {
     margin-inline-end: 2rem;
 }
 
-@media screen and (max-width:767px){
+@media screen and (min-width:401px) and (max-width:960px){
     .topbar{
-        width: 98%;
+        width: 98.8%;
+    }
+    .search input{
+        margin-right: 3%;
     }
     .grid-container{
         display: -ms-grid;
         display: grid;
         grid-gap: 2%;
-        margin-left: -45px;
-        grid-template-columns: 65% 30%;
-        grid-template-rows: 65% 10%;
+        margin-left: -40px;
+        grid-template-areas: 
+        'left' 
+        '. .'
+        'buttom1'
+        'buttom2 .'
+        'buttom3 .'
+        'right'
+        'right1';
+        grid-template-columns: 73% 23%;
+        grid-template-rows: 45% 5%;
     }
     .grid-container div{
-        font-size: 12px;
-        font-weight: 500;
+        font-size: 19px;
+        font-weight: 500;  
+    }
+    .buttom_grid1,
+    .buttom_grid2,
+    .buttom_grid3{
+        width: 90%;
     }
     .buttom_grid2,
     .buttom_grid3{
@@ -314,17 +330,14 @@ hr {
     .buttom_grid1 p,
     .buttom_grid2 p,
     .buttom_grid3 p{
-        font-size: 10px;
-    }
-    .right_grid1{
-        height: 460%; /*  right grid 2 height*/
+        font-size: 16px;
     }
     .see_more a{
-        margin-top: 38%;
+        margin-top: 3%;
         margin-right: 3%;
     }
     .see_more hr{
-        margin-top: 44%;
+        margin-top: 5%;
     }
     .footer{
         /* margin-left: 0.1rem; */
@@ -337,5 +350,80 @@ hr {
     }
     .footer_logo img{
         margin-inline-end: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .search input{
+        margin-right: 3%;
+    }
+    .topbar{
+        width: 97.5%;
+    }
+    .grid-container{
+        display: -ms-grid;
+        display: grid;
+        grid-gap: 2%;
+        margin-left: -50px;
+        grid-template-areas: 
+        'left' 
+        '. .'
+        'buttom1'
+        'buttom2 .'
+        'buttom3 .'
+        'right'
+        'right1';
+        grid-template-columns: 73% 23%;
+        grid-template-rows: 50% 12%;
+    }
+    .grid-container div{
+        font-size: 9px;
+        font-weight: 500;
+    }
+    .right_grid img{
+        height: 50%;
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+    .right_grid hr{
+        border-top: 2px solid rgb(4,180,212);
+    }
+    .buttom_grid1,
+    .buttom_grid2,
+    .buttom_grid3{
+        width: 82%;
+    }
+    .buttom_grid2,
+    .buttom_grid3{
+        margin-top: 1px;
+    }
+    .buttom_grid1 p,
+    .buttom_grid2 p,
+    .buttom_grid3 p{
+        font-size: 7px;
+    }
+    .right_grid1{
+        height: 1200%;
+    }
+    .see_more a{
+        margin-top: 5%;
+        margin-right: 3%;
+        padding: 3px 7px;
+    }
+    .see_more hr{
+        margin-top: 5%;
+    }
+    .footer{
+        /* margin-left: 0.1rem; */
+        margin: 2px;
+        padding: 12px;
+        font-size: 8px;
+    }
+    .footer_logo{
+        margin-right: 10%;
+        margin-top: -2%;
+    }
+    .footer_logo img{
+        margin-inline-end: 0.5rem;
     }
 }
